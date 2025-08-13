@@ -55,8 +55,7 @@ function Cadastro() {
         alert('Usuário cadastrado com sucesso!')
       }catch(error){
         alert('Erro ao cadastrar o usuário!')
-      }
-    }else{
+      }    }else{
       alert('Dados do usuário inconsistentes! Verifique as informações do cadastro.')
       setUsuario({...usuario, senha: ''})
       setConfirmaSenha('')
