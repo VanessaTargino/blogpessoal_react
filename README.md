@@ -20,7 +20,8 @@ Um **Blog Pessoal** desenvolvido com **React**, **TypeScript** e **Vite**, com f
 
 ## 🖼️ Capturas de Tela
 
-*(Inserir imagens do projeto para ilustrar)*  
+*(Inserir 
+imagens do projeto para ilustrar)*  
 
 - Tela de login:  
   ![Login](link-da-imagem-login)  

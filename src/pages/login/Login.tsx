@@ -30,7 +30,7 @@ function ListaTemas() {
 
   useEffect(() => {
     if(usuario.token === '') {
-      alert('Sem logar não rola neh')
+      alert('Você precisa estar logado')
       navigate('/')
     }
   }, [navigate, usuario.token])
