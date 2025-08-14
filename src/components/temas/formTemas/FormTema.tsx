@@ -1,10 +1,10 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/no-unused-vars */
+// eslint-disable @typescript-eslint/no-explicit-any
+//eslint-disable @typescript-eslint/no-unused-vars 
 import { useContext, useEffect, useState } from "react";
-import CardTemas from "../../components/temas/cardTemas/CardTemas";
-import type Tema from "../../models/Tema";
-import { buscar } from "../../services/Service";
-import { AuthContext } from "../../contexts/AuthContext";
+import CardTemas from "../cardTemas/CardTemas";
+import type Tema from "../../../models/Tema";
+import { buscar } from "../../../services/Service";
+import { AuthContext } from "../../../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { DNA } from "react-loader-spinner";
 
