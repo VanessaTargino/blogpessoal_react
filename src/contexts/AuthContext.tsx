@@ -28,16 +28,18 @@ export function AuthProvider({ children }: AuthProviderProps) {
 
     const [isLoading, setIsLoading] = useState(false)
 
-    async function handleLogin(usuarioLogin: UsuarioLogin) {
-        setIsLoading(true)
-        try {
-            await login(`/usuarios/logar`, usuarioLogin, setUsuario)
-            alert("O Usuário foi autenticado com sucesso!")
-        } catch (error) {
-            alert("Os Dados do usuário estão inconsistentes!")
-        }
-        setIsLoading(false)
+   async function handleLogin(usuarioLogin: UsuarioLogin) {
+    setIsLoading(true);
+    try {
+        await login(`/usuarios/logar`, usuarioLogin, setUsuario);
+        alert("O Usuário foi autenticado com sucesso!");
+    } catch (error) {
+        alert("Os Dados do usuário estão inconsistentes!");
+    } finally {
+        setIsLoading(false);
     }
+}
+
 
     function handleLogout() {
         setUsuario({
